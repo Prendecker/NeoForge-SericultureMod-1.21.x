@@ -2,6 +2,7 @@ package net.prendeck.sericulture;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.prendeck.sericulture.block.ModBlocks;
 import net.prendeck.sericulture.item.ModItems;
 import org.slf4j.Logger;
 
@@ -35,6 +36,7 @@ public class Sericulture
         modEventBus.addListener(this::commonSetup);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
@@ -55,6 +57,10 @@ public class Sericulture
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.MULBERRY_LEAVES);
         }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS);{
+            event.accept(ModBlocks.JUMBLED_BLOCK);
+    }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
