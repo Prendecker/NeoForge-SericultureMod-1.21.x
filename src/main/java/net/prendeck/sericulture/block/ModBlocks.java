@@ -17,8 +17,8 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Sericulture.MOD_ID);
 
-    public static final DeferredBlock<Block> JUMBLED_BLOCK = registerBlock("jumbled_block", () -> new Block(
-            BlockBehaviour.Properties.of()
+    public static final DeferredBlock<Block> JUMBLED_BLOCK = registerBlock("jumbled_block",
+            () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1f,1f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     private  static  <T extends  Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){

@@ -35,6 +35,8 @@ public class Sericulture
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        ModCreativeModeTaags.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -54,13 +56,7 @@ public class Sericulture
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.MULBERRY_LEAVES);
-        }
 
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS);{
-            event.accept(ModBlocks.JUMBLED_BLOCK);
-    }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

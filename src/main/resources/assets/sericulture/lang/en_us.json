@@ -1,4 +1,8 @@
 {
   "item.sericulture.mulberry_leaves": "Mulberry Leaves",
-  "block.sericulture.jumbled_block": "J？？led Bl？?k"
+  "item.sericulture.wooden_hooks": "Wooden Hooks",
+
+  "block.sericulture.jumbled_block": "J？？led Bl？?k",
+
+  "itemGroup.sericulture": "Sericulture"
 }

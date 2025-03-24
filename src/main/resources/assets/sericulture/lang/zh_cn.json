@@ -1,4 +1,8 @@
 {
   "item.sericulture.mulberry_leaves": "桑叶",
-  "block.sericulture.jumbled_block": "错？？乱方？"
+  "item.sericulture.wooden_hooks": "木钩",
+
+  "block.sericulture.jumbled_block": "错？？乱方？",
+
+  "itemGroup.sericulture": "蚕业"
 }
