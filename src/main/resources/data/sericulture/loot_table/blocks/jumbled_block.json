@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 10.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "sericulture:jumbled_block"
+        }
+      ],
+      "rolls": 5.0
+    }
+  ],
+  "random_sequence": "sericulture:blocks/jumbled_block"
+}

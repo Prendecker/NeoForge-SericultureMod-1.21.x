@@ -113,6 +113,11 @@ configurations {
 }
 
 dependencies {
+    implementation "net.neoforged:neoforge:${neo_version}"
+
+    implementation "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
+
+
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
@@ -171,9 +176,30 @@ publishing {
         }
     }
     repositories {
+        mavenLocal()
         maven {
             url "file://${project.projectDir}/repo"
         }
+
+        maven {
+            name = 'GeckoLib'
+            url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+            content {
+                includeGroup("software.bernie.geckolib")
+            }
+        }
+
+        maven {
+            // location of the maven that hosts JEI files since January 2023
+            name = "Jaredsmaven"
+            url = "https://maven.blamejared.com/"
+        }
+        maven {
+            // location of a maven mirror for JEI files, as a fallback
+            name = "ModMaven"
+            url = "https://modmaven.dev"
+        }
+
     }
 }
 
