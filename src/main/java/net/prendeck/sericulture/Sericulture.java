@@ -1,8 +1,7 @@
 package net.prendeck.sericulture;
 
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.prendeck.sericulture.block.ModBlocks;
+import net.prendeck.sericulture.item.ModCreativeModeTaags;
 import net.prendeck.sericulture.item.ModItems;
 import org.slf4j.Logger;
 

@@ -1,6 +1,12 @@
 {
-  "item.sericulture.mulberry_leaves": "桑叶",
+  "item.sericulture.mulberry_leaf": "桑叶",
+
   "item.sericulture.wooden_hooks": "木钩",
+  "item.sericulture.stone_hooks": "石钩",
+  "item.sericulture.iron_hooks": "铁钩",
+  "item.sericulture.golden_hooks": "金钩",
+  "item.sericulture.diamond_hooks": "钻石钩",
+  "item.sericulture.netherite_hooks": "下界合金钩",
 
   "block.sericulture.jumbled_block": "错？？乱方？",
 

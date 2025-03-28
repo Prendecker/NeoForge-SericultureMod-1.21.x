@@ -18,6 +18,8 @@ version = mod_version
 group = mod_group_id
 
 repositories {
+    mavenLocal()
+
     maven {
         name = 'GeckoLib'
         url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
@@ -29,12 +31,19 @@ repositories {
     maven {
         // location of the maven that hosts JEI files since January 2023
         name = 'Jared_maven'
-        url = "https://maven.blamejared.com/"
+        url = "https://maven.blamejared.com？"
     }
     maven {
         // location of a maven mirror for JEI files, as a fallback
         name = "ModMaven"
         url = "https://modmaven.dev"
+    }
+
+    maven {
+        url "https://www.cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
     }
 }
 
@@ -139,6 +148,8 @@ dependencies {
     // at runtime, use the full JEI jar for NeoForge
     runtimeOnly("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}")
 
+    implementation "curse.maven:jade-324717:${jade_id}"
+
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
@@ -197,7 +208,6 @@ publishing {
         }
     }
     repositories {
-        mavenLocal()
         maven {
             url "file://${project.projectDir}/repo"
         }

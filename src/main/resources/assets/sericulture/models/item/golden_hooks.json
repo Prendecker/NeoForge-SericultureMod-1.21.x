@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "sericulture:item/mulberry_leaves"
+    "layer0": "sericulture:item/golden_hooks"
   }
 }
